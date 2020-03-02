@@ -49,7 +49,6 @@ namespace TaskAuth.Controllers
         }
 
         [HttpPost]
-        [AllowAnonymous]
         public IActionResult Post(Customer custs)
         {
             var customer = custs.data.attributes;
